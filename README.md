@@ -8,7 +8,7 @@ The following are the two core ideas:
 1. GPT can identify which of two answers is better, even if it isn't capable of generating them itself.
 2. Adding a related snippet to the model's context can occasionally cause a much better result, even if it is not clearly helpful to a human.
 
-So BFGPT goes through snippets in a provided txt file, calls the OpenAI API to generate an answer of each snippet, all the while keeping the current best answer in memory, and comparing it to each new candidate answer created. At the end it returns the best answer found.
+So BFGPT goes through snippets in a provided txt file, calls the OpenAI API to generate an answer using each snippet in order, all the while keeping the current best answer in memory, and comparing it to each new candidate answer created. At the end it returns the best answer found.
 
 ## Example Result:
 
