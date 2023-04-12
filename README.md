@@ -71,6 +71,8 @@ To switch from GPT-3.5 to GPT-4, you must manually change it in the code. Rememb
 
 For more options, python3 BFGPT.py --help
 
+-------------
+
 Disclaimer I copied over from AutoGPT:
 ### 🛡 Disclaimer
 
