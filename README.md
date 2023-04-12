@@ -74,7 +74,7 @@ For more options, python3 BFGPT.py --help
 -------------
 
 Disclaimer I copied over from AutoGPT:
-### 🛡 Disclaimer
+## 🛡 Disclaimer
 
 Disclaimer
 This project, BFGPT, is an experimental application and is provided "as-is" without any warranty, express or implied. By using this software, you agree to assume all risks associated with its use, including but not limited to data loss, system failure, or any other issues that may arise.
