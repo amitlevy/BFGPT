@@ -16,12 +16,12 @@ So BFGPT goes through snippets in a provided txt file, calls the OpenAI API to g
 
 2. Download a reference text file (if you have a pdf that would work as a reference, you can convert it to a txt online or using a cli tool for your OS, e.g. pdftotext)
 
-3.
+3. Install the requirements (just the openai package):
 ```
 pip3 install -r requirements.txt
 ```
 
-4. 
+4. Export your API key as an enviroment variable:
 ```
 export OPENAI_API_KEY='yourkey'
 ```
