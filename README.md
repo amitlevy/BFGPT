@@ -26,7 +26,7 @@ pip3 install -r requirements.txt
 export OPENAI_API_KEY='yourkey'
 ```
 
-5. Run the command (Careful! It costs money, potentially a lot, especially if you changed it to GPT-4. Each iteration is two API calls, and the default is 100 iterations. By default you must press Enter before each iteration to confirm.):
+5. Run the command (**Careful**! It costs money, potentially a lot, especially if you changed it to GPT-4. Each iteration is two API calls, and the default is 100 iterations. By default you must press Enter before each iteration to confirm.):
 ```
 python3 BFGPT.py kubernetes.txt "Can a cat live inside a Kubernetes container?"
 ```
@@ -66,7 +66,7 @@ They are not designed to accommodate living creatures like cats.
 ```
 (By default, BFGPT does 100 iterations, which in this case was about 60 pages)
 
-If I had GPT-4 access, I'd check if it can boost it as well, for instance on the variant of the River Crossing Riddle that it currently can't solve, with a book on problem solving as the inspiration text. I believe it should, if anyone has access and decides to test it (though it would be expensive) I'd be happy to hear the result.
+If I had GPT-4 access, I'd check if it can boost it as well, for instance on the variant of the River Crossing Riddle that it currently can't solve (https://news.ycombinator.com/item?id=35155467&p=2), with a book on problem solving as the inspiration text. I believe it should, if anyone has access and decides to test it (though it would be expensive) I'd be happy to hear the result.
 
 This project is currently a Work in Progress.
 
