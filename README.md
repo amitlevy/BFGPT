@@ -20,11 +20,7 @@ If you normally ask GPT3.5 "Can a cat live inside a Kubernetes container?", a ty
 >
 > Kubernetes is a container orchestration system used for deploying, scaling, and managing containerized applications. Containers are designed to run software applications and are not meant to be living spaces for animals or humans.
 >
-> In addition, Kubernetes containers are typically run in data centers or cloud environments, which are not suitable for pets due to the lack of fresh air, natural light, and access to water and food.
-> 
-> Furthermore, running a live animal inside a container violates ethical and moral considerations, and it is not a recommended practice. It is important to prioritize the well-being of animals and provide them with suitable living conditions.
-> 
-> Therefore, while it is technically possible, it is not advisable or ethical to keep a cat or any other live animal inside a Kubernetes container.
+> ...
 
 
 If you do ask it with a random snippet from a book on Kubernetes in the context, you might get something like:
