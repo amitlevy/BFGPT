@@ -61,7 +61,7 @@ pip3 install -r requirements.txt
 export OPENAI_API_KEY='yourkey'
 ```
 
-5. Run the command (**Careful**! It costs money, potentially a lot, especially if you changed it to GPT-4. Each iteration is two API calls, and the default is 100 iterations. By default you must press Enter before each iteration to confirm.):
+5. Run the command (**Careful**! It costs money. By default you must press Enter before each iteration to confirm.):
 ```
 python3 BFGPT.py kubernetes.txt "Can a cat live inside a Kubernetes container?"
 ```
