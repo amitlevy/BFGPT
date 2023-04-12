@@ -5,25 +5,25 @@
 BFGPT (Brute Force GPT) is an experiment to try and push the power of a GPT chat model a bit further using a large amount of attempts and a tangentially related reference for inspiration.
 
 The following are the two core ideas:
-	- GPT can identify which of two answers is better, even if it isn't capable of generating them itself.
-	- Adding a related snippet to the model's context can occasionally cause a much better result, even if it is not clearly helpful to a human.
+1. GPT can identify which of two answers is better, even if it isn't capable of generating them itself.
+2. Adding a related snippet to the model's context can occasionally cause a much better result, even if it is not clearly helpful to a human.
 
 So BFGPT goes through snippets in a provided txt file, calls the OpenAI to generate an answer of each snippet, all the while keeping the current best answer in memory, comparing it to each new candidate answer created. At the end it returns the best answer found.
 
-### Usage:
+### Usage
 
 1. Git clone the repository
 
 2. Download a reference text file (if you have a pdf that would work as a reference, you can convert it to a txt online or using a cli tool for your OS)
 
-3. Run python3 pip install -r requirements.txt
+3. Run pip3 install -r requirements.txt
 
 4. 
 '''
 export OPENAI_API_KEY='yourkey'
 '''
 
-5. Run the command (Careful! It costs money, potentially a lot, especially if you changed it to GPT-4):
+5. Run the command (Careful! It costs money, potentially a lot, especially if you changed it to GPT-4. Each iteration is two API calls, and the default is 100 iterations. By default you must press Enter before each iteration to confirm.):
 '''
 python3 BFGPT.py kubernetes.txt "Can a cat live inside a Kubernetes container?"
 '''
@@ -33,10 +33,10 @@ To switch from GPT-3.5 to GPT-4, you must manually change it in the code. Rememb
 
 For more options, python3 BFGPT.py --help
 
-### Example:
+### Example Result
 The following example is for GPT-3.5. GPT-4 can zero-shot to the question shown here, I don't have access to its API, which is why I'm showing this less impressive example.
 
-If you ask GPT3.5 "Can a cat live inside a Kubernetes container?"
+If you normally ask GPT3.5 "Can a cat live inside a Kubernetes container?", a typical response would be:
 '''
 Technically speaking, it is possible for a cat to live inside a Kubernetes container, but it would not be a good idea.
 
@@ -65,10 +65,10 @@ They are not designed to accommodate living creatures like cats.
 
 If I get GPT-4 access, I'll see if it can boost it as well, for instance on the variant of the River Crossing Riddle that it currently can't solve, with a book on problem solving as the inspiration text.
 
-This project is currently a WIP.
+This project is currently a Work in Progress.
 
-Bdw, disclaimer I copied over from AutoGPT:
-## 🛡 Disclaimer
+Disclaimer I copied over from AutoGPT:
+### 🛡 Disclaimer
 
 Disclaimer
 This project, BFGPT, is an experimental application and is provided "as-is" without any warranty, express or implied. By using this software, you agree to assume all risks associated with its use, including but not limited to data loss, system failure, or any other issues that may arise.

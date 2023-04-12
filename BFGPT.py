@@ -67,8 +67,8 @@ Merits discussion: <Discussion on correctness, explanation quality, and concisen
 Chosen Answer: A/B
     """
     response = get_assistant_response(query)
-    logging.info(f"query: {query}")
-    logging.info(f"compare_answers response: {response}")
+    logging.debug(f"query: {query}")
+    logging.debug(f"compare_answers response: {response}")
     org_response = response
     response = response[-2:]
     if (not ("A" in response)) and (not ("B" in response)):
