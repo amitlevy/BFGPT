@@ -8,15 +8,18 @@ The following are the two core ideas:
 1. GPT can identify which of two answers is better, even if it isn't capable of generating them itself.
 2. Adding a related snippet to the model's context can occasionally cause a much better result, even if it is not clearly helpful to a human.
 
-So BFGPT goes through snippets in a provided txt file, calls the OpenAI to generate an answer of each snippet, all the while keeping the current best answer in memory, comparing it to each new candidate answer created. At the end it returns the best answer found.
+So BFGPT goes through snippets in a provided txt file, calls the OpenAI API to generate an answer of each snippet, all the while keeping the current best answer in memory, and comparing it to each new candidate answer created. At the end it returns the best answer found.
 
 ### Usage
 
 1. Git clone the repository
 
-2. Download a reference text file (if you have a pdf that would work as a reference, you can convert it to a txt online or using a cli tool for your OS)
+2. Download a reference text file (if you have a pdf that would work as a reference, you can convert it to a txt online or using a cli tool for your OS, e.g. pdftotext)
 
-3. Run pip3 install -r requirements.txt
+3.
+'''
+pip3 install -r requirements.txt
+'''
 
 4. 
 '''
@@ -29,12 +32,12 @@ python3 BFGPT.py kubernetes.txt "Can a cat live inside a Kubernetes container?"
 '''
 
 Press enter between iterations, or turn off safe mode.
-To switch from GPT-3.5 to GPT-4, you must manually change it in the code. Remember that it is x30 more expensive (for now).
+To switch from GPT-3.5 to GPT-4, you must manually change it in the code. Remember that it is x30 more expensive (until OpenAI's next x10 price reduction :D).
 
 For more options, python3 BFGPT.py --help
 
 ### Example Result
-The following example is for GPT-3.5. GPT-4 can zero-shot to the question shown here, I don't have access to its API, which is why I'm showing this less impressive example.
+The following example is for GPT-3.5. GPT-4 can zero-shot the question shown here, I don't have access to its API, which is why I'm showing this less impressive example.
 
 If you normally ask GPT3.5 "Can a cat live inside a Kubernetes container?", a typical response would be:
 '''
@@ -49,12 +52,12 @@ Furthermore, running a live animal inside a container violates ethical and moral
 Therefore, while it is technically possible, it is not advisable or ethical to keep a cat or any other live animal inside a Kubernetes container.
 '''
 
-If you do it with a random snippet from a book on Kubernetes in the context, you might get something like:
+If you do ask it with a random snippet from a book on Kubernetes in the context, you might get something like:
 '''
 As an AI language model, I must inform you that the question is not relevant to the given text snippet which is about building, distributing, and running a Docker image. To answer the question, theoretically it is possible for a cat to live inside a Kubernetes container, but it would not be a recommended or ethical practice as containers are meant for running software applications, not for living creatures.
 '''
 
-After running the above command with the default values on a Kubernetes book (contained in a txt file), I got:
+After running the above command with the default values using a Kubernetes book as the inspiration text (contained in a txt file), at the end I got:
 '''
 No. 
 Kubernetes uses Linux container technologies to provide isolation of running applications. 
@@ -63,7 +66,7 @@ They are not designed to accommodate living creatures like cats.
 '''
 (By default, BFGPT does 100 iterations, which in this case was about 60 pages)
 
-If I get GPT-4 access, I'll see if it can boost it as well, for instance on the variant of the River Crossing Riddle that it currently can't solve, with a book on problem solving as the inspiration text.
+If I had GPT-4 access, I'd check if it can boost it as well, for instance on the variant of the River Crossing Riddle that it currently can't solve, with a book on problem solving as the inspiration text. I believe it should, if anyone has access and decides to test it (though it would be expensive) I'd be happy to hear the result.
 
 This project is currently a Work in Progress.
 
