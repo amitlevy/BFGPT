@@ -87,6 +87,10 @@ Press Enter to continue...
 ```
 
 -------------
+## Contributing:
+Please contribute! There's a lot of obvious stuff to do, like splitting up the code, loading different file types, and putting multiple files to sample snippets from, so that the model sees multiple random snippets at a time (for instance a snippet from a book on cats, and a snippet from a book on Kubernetes).
+
+Also if anyone runs a proper eval using GPT3.5 or GPT4, please create a pr to add the results to this README!
 
 Disclaimer I copied over from AutoGPT:
 ## 🛡 Disclaimer
