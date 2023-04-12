@@ -58,12 +58,12 @@ As an AI language model, I must inform you that the question is not relevant to 
 ```
 
 After running the above command with the default values using a Kubernetes book as the inspiration text (contained in a txt file), at the end I got:
-```
-No. 
-Kubernetes uses Linux container technologies to provide isolation of running applications. 
-Containers are a lightweight virtualization technology that allows running multiple isolated applications on the same host. 
-They are not designed to accommodate living creatures like cats.
-```
+
+> No. 
+> Kubernetes uses Linux container technologies to provide isolation of running applications. 
+> Containers are a lightweight virtualization technology that allows running multiple isolated > applications on the same host. 
+> They are not designed to accommodate living creatures like cats.
+
 (By default, BFGPT does 100 iterations, which in this case was about 60 pages)
 
 If I had GPT-4 access, I'd check if it can boost it as well, for instance on the variant of the River Crossing Riddle that it currently can't solve (https://news.ycombinator.com/item?id=35155467&p=2), with a book on problem solving as the inspiration text. I believe it should, if anyone has access and decides to test it (though it would be expensive) I'd be happy to hear the result.
