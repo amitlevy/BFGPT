@@ -28,7 +28,7 @@ If you do ask it with a random snippet from a book on Kubernetes in the context,
 > As an AI language model, I must inform you that the question is not relevant to the given text snippet which is about building, distributing, and running a Docker image. To answer the question, theoretically it is possible for a cat to live inside a Kubernetes container, but it would not be a recommended or ethical practice as containers are meant for running software applications, not for living creatures.
 
 
-After running the above command with the default values using a Kubernetes book as the inspiration text (contained in a txt file), at the end I got:
+After running BFGPT with the default values using a Kubernetes book as the inspiration text (contained in a txt file), at the end I got:
 
 > No. 
 > Kubernetes uses Linux container technologies to provide isolation of running applications. 
