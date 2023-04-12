@@ -10,7 +10,8 @@ The following are the two core ideas:
 
 So BFGPT goes through snippets in a provided txt file, calls the OpenAI API to generate an answer of each snippet, all the while keeping the current best answer in memory, and comparing it to each new candidate answer created. At the end it returns the best answer found.
 
-### Example Result
+## Example Result:
+
 The following example is for GPT-3.5. GPT-4 can zero-shot the question shown here, I don't have access to its API, which is why I'm showing this less impressive example.
 
 If you normally ask GPT3.5 "Can a cat live inside a Kubernetes container?", a typical response would be:
@@ -44,7 +45,7 @@ If I had GPT-4 access, I'd check if it can boost it as well, for instance on the
 
 This project is currently a Work in Progress.
 
-### Usage
+## Usage:
 
 1. Git clone the repository
 
