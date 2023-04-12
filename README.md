@@ -40,22 +40,22 @@ For more options, python3 BFGPT.py --help
 The following example is for GPT-3.5. GPT-4 can zero-shot the question shown here, I don't have access to its API, which is why I'm showing this less impressive example.
 
 If you normally ask GPT3.5 "Can a cat live inside a Kubernetes container?", a typical response would be:
-```
-Technically speaking, it is possible for a cat to live inside a Kubernetes container, but it would not be a good idea.
 
-Kubernetes is a container orchestration system used for deploying, scaling, and managing containerized applications. Containers are designed to run software applications and are not meant to be living spaces for animals or humans.
+> Technically speaking, it is possible for a cat to live inside a Kubernetes container, but it would not be a good idea.
+>
+> Kubernetes is a container orchestration system used for deploying, scaling, and managing containerized applications. Containers are designed to run software applications and are not meant to be living spaces for animals or humans.
+>
+> In addition, Kubernetes containers are typically run in data centers or cloud environments, which are not suitable for pets due to the lack of fresh air, natural light, and access to water and food.
+> 
+> Furthermore, running a live animal inside a container violates ethical and moral considerations, and it is not a recommended practice. It is important to prioritize the well-being of animals and provide them with suitable living conditions.
+> 
+> Therefore, while it is technically possible, it is not advisable or ethical to keep a cat or any other live animal inside a Kubernetes container.
 
-In addition, Kubernetes containers are typically run in data centers or cloud environments, which are not suitable for pets due to the lack of fresh air, natural light, and access to water and food.
-
-Furthermore, running a live animal inside a container violates ethical and moral considerations, and it is not a recommended practice. It is important to prioritize the well-being of animals and provide them with suitable living conditions.
-
-Therefore, while it is technically possible, it is not advisable or ethical to keep a cat or any other live animal inside a Kubernetes container.
-```
 
 If you do ask it with a random snippet from a book on Kubernetes in the context, you might get something like:
-```
-As an AI language model, I must inform you that the question is not relevant to the given text snippet which is about building, distributing, and running a Docker image. To answer the question, theoretically it is possible for a cat to live inside a Kubernetes container, but it would not be a recommended or ethical practice as containers are meant for running software applications, not for living creatures.
-```
+
+> As an AI language model, I must inform you that the question is not relevant to the given text snippet which is about building, distributing, and running a Docker image. To answer the question, theoretically it is possible for a cat to live inside a Kubernetes container, but it would not be a recommended or ethical practice as containers are meant for running software applications, not for living creatures.
+
 
 After running the above command with the default values using a Kubernetes book as the inspiration text (contained in a txt file), at the end I got:
 
