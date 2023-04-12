@@ -9,7 +9,7 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S')
 
 # To prevent triggering a rate limit
-SLEEP_TIME = 0.5
+SLEEP_TIME_SECONDS = 0.5
 RETRY_COUNT = 3
 
 def main():
@@ -84,7 +84,7 @@ Chosen Answer: A/B
 def get_assistant_response(query):
     for i in range(RETRY_COUNT):
         try:
-            time.sleep(SLEEP_TIME)
+            time.sleep(SLEEP_TIME_SECONDS)
             response = openai.ChatCompletion.create(
                 model="gpt-3.5-turbo",
                 messages=[
