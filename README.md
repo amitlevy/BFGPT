@@ -71,6 +71,25 @@ To switch from GPT-3.5 to GPT-4, you must manually change it in the code. Rememb
 
 For more options, python3 BFGPT.py --help
 
+Example logs during a run:
+```
+2023-04-12 19:20:08 INFO     Currently at iter=26 out of 100
+Press Enter to continue...
+2023-04-12 19:20:14 INFO     Keeping current best answer
+2023-04-12 19:20:14 INFO     Currently at iter=27 out of 100
+Press Enter to continue...
+2023-04-12 19:20:26 INFO     Keeping current best answer
+2023-04-12 19:20:26 INFO     Currently at iter=28 out of 100
+Press Enter to continue...
+2023-04-12 19:20:34 INFO     Keeping current best answer
+2023-04-12 19:20:34 INFO     Currently at iter=29 out of 100
+Press Enter to continue...
+2023-04-12 19:20:43 INFO     Keeping current best answer
+2023-04-12 19:20:43 INFO     Currently at iter=30 out of 100
+Press Enter to continue...
+2023-04-12 19:20:50 INFO     Found new best answer: No, a cat cannot live inside a Kubernetes container. Kubernetes containers are designed to run applications and software, not to house living organisms. They are not suitable environments for animals or humans
+```
+
 -------------
 
 Disclaimer I copied over from AutoGPT:
