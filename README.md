@@ -10,32 +10,6 @@ The following are the two core ideas:
 
 So BFGPT goes through snippets in a provided txt file, calls the OpenAI API to generate an answer of each snippet, all the while keeping the current best answer in memory, and comparing it to each new candidate answer created. At the end it returns the best answer found.
 
-### Usage
-
-1. Git clone the repository
-
-2. Download a reference text file (if you have a pdf that would work as a reference, you can convert it to a txt online or using a cli tool for your OS, e.g. pdftotext)
-
-3. Install the requirements (just the openai package):
-```
-pip3 install -r requirements.txt
-```
-
-4. Export your API key as an enviroment variable:
-```
-export OPENAI_API_KEY='yourkey'
-```
-
-5. Run the command (**Careful**! It costs money, potentially a lot, especially if you changed it to GPT-4. Each iteration is two API calls, and the default is 100 iterations. By default you must press Enter before each iteration to confirm.):
-```
-python3 BFGPT.py kubernetes.txt "Can a cat live inside a Kubernetes container?"
-```
-
-Press enter between iterations, or turn off safe mode.
-To switch from GPT-3.5 to GPT-4, you must manually change it in the code. Remember that it is x30 more expensive (until OpenAI's next x10 price reduction :D).
-
-For more options, python3 BFGPT.py --help
-
 ### Example Result
 The following example is for GPT-3.5. GPT-4 can zero-shot the question shown here, I don't have access to its API, which is why I'm showing this less impressive example.
 
@@ -69,6 +43,32 @@ After running the above command with the default values using a Kubernetes book 
 If I had GPT-4 access, I'd check if it can boost it as well, for instance on the variant of the River Crossing Riddle that it currently can't solve (https://news.ycombinator.com/item?id=35155467&p=2), with a book on problem solving as the inspiration text. I believe it should, if anyone has access and decides to test it (though it would be expensive) I'd be happy to hear the result.
 
 This project is currently a Work in Progress.
+
+### Usage
+
+1. Git clone the repository
+
+2. Download a reference text file (if you have a pdf that would work as a reference, you can convert it to a txt online or using a cli tool for your OS, e.g. pdftotext)
+
+3. Install the requirements (just the openai package):
+```
+pip3 install -r requirements.txt
+```
+
+4. Export your API key as an enviroment variable:
+```
+export OPENAI_API_KEY='yourkey'
+```
+
+5. Run the command (**Careful**! It costs money, potentially a lot, especially if you changed it to GPT-4. Each iteration is two API calls, and the default is 100 iterations. By default you must press Enter before each iteration to confirm.):
+```
+python3 BFGPT.py kubernetes.txt "Can a cat live inside a Kubernetes container?"
+```
+
+Press enter between iterations, or turn off safe mode.
+To switch from GPT-3.5 to GPT-4, you must manually change it in the code. Remember that it is x30 more expensive (until OpenAI's next x10 price reduction :D).
+
+For more options, python3 BFGPT.py --help
 
 Disclaimer I copied over from AutoGPT:
 ### 🛡 Disclaimer
