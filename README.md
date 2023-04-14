@@ -32,7 +32,7 @@ After running BFGPT with the default values using a Kubernetes book as the inspi
 
 > No. 
 > Kubernetes uses Linux container technologies to provide isolation of running applications. 
-> Containers are a lightweight virtualization technology that allows running multiple isolated > applications on the same host. 
+> Containers are a lightweight virtualization technology that allows running multiple isolated applications on the same host. 
 > They are not designed to accommodate living creatures like cats.
 
 (By default, BFGPT does 100 iterations, which in this case was about 60 pages)
@@ -88,7 +88,7 @@ Press Enter to continue...
 
 -------------
 ## Contributing:
-Please contribute! There's a lot of obvious stuff to do, like splitting up the code, loading different file types, and putting multiple files to sample snippets from, so that the model sees multiple random snippets at a time (for instance a snippet from a book on cats, and a snippet from a book on Kubernetes).
+Please contribute! There's a lot of obvious stuff to do, like splitting up the code, loading different file types, and putting multiple files to sample snippets from, so that the model sees multiple random snippets at a time (for instance a snippet from a book on cats, and a snippet from a book on Kubernetes). Also - the whole system can be made to work in parallel, meaning O(logN) instead of O(N), using a brackets approach.
 
 Also if anyone runs a proper eval using GPT3.5 or GPT4, please create a pr to add the results to this README!
 
