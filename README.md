@@ -1,4 +1,4 @@
-# ! No longer maintained, results not SOTA, I'll create a new SOTA prompting repo soon !
+# ❗ No longer maintained, the spiritual successor is now [evolutionaryGPT](https://github.com/amitlevy/EvolutionaryGpT)
 
 # Brute Force GPT: Give GPT 3.5/4 a boost
 
